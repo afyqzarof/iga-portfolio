@@ -4,7 +4,10 @@ import { Dot } from "./dot";
 
 const MenuBtn = ({ handleClick }: { handleClick: () => void }) => {
   return (
-    <button onClick={handleClick} className="flex flex-col items-center gap-1">
+    <button
+      onClick={handleClick}
+      className="flex cursor-pointer flex-col items-center gap-1 text-inherit"
+    >
       <Dot />
       (menu)
     </button>
