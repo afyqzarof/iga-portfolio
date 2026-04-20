@@ -10,10 +10,10 @@ export function meta({}: Route.MetaArgs) {
 
 const Home = () => {
   return (
-    <main className="h-screen bg-cover bg-[url(/backgrounds/mobile-home-bg.jpg)] fixed top-0 w-screen">
+    <main className="fixed top-0 h-screen w-screen bg-[url(/backgrounds/mobile-home-bg.jpg)] bg-cover">
       <section className="mt-24">
-        <h1 className="font-mono text-white text-3xl">iga sokół,</h1>
-        <h2 className="font-mono text-white text-3xl">UI/UX designer</h2>
+        <h1 className="font-mono text-3xl text-white">iga sokół,</h1>
+        <h2 className="font-mono text-3xl text-white">UI/UX designer</h2>
       </section>
       <Menu />
     </main>

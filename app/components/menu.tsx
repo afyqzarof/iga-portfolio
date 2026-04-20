@@ -6,13 +6,11 @@ const Menu = () => {
 
   return (
     <>
-      <article className="fixed bottom-4 text-white font-serif">
+      <article className="fixed bottom-4 font-serif text-white">
         <button onClick={handleClick}>(menu)</button>
       </article>
       <section
-        className={`
-          ${open ? "translate-0" : "translate-y-full"} overflow-hidden absolute bg-red-100 w-screen h-screen top-0 transition-transform
-            `}
+        className={` ${open ? "translate-0 opacity-90" : "translate-y-full opacity-0"} absolute top-0 h-screen w-screen overflow-hidden bg-red-100 transition`}
       >
         <ul>
           <li>home</li>
