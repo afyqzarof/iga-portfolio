@@ -8,7 +8,11 @@ export function meta({}: Route.MetaArgs) {
 }
 
 const Home = () => {
-  return <p className="font-mono">This is home page</p>;
+  return (
+    <main className="h-screen bg-cover bg-[url(/backgrounds/mobile-home-bg.jpg)]">
+      <p className="font-mono">This is home page</p>;
+    </main>
+  );
 };
 
 export default Home;
