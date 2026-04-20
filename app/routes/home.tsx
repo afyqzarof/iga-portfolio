@@ -7,6 +7,8 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
+const Home = () => {
   return <p>This is home page</p>;
-}
+};
+
+export default Home;
