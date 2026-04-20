@@ -1,5 +1,12 @@
+import { Menu } from "~/components/menu";
+
 const About = () => {
-  return <p>This is about page</p>;
+  return (
+    <main>
+      <p>This is about page</p>
+      <Menu />
+    </main>
+  );
 };
 
 export default About;

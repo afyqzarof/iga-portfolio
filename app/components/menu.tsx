@@ -25,7 +25,12 @@ const Menu = () => {
           </li>
           <li>view my project, studio</li>
           <li>
-            <Link to="about">about</Link>
+            <Link
+              to="about"
+              className={isActive("/about") ? "line-through" : ""}
+            >
+              about
+            </Link>
           </li>
           <li>contact</li>
         </ul>
