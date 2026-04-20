@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@theme {
+  --font-mono: "Xanh Mono", ui-mono, system-ui, mono;
+}
