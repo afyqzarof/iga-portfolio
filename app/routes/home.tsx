@@ -9,8 +9,11 @@ export function meta({}: Route.MetaArgs) {
 
 const Home = () => {
   return (
-    <main className="h-screen bg-cover bg-[url(/backgrounds/mobile-home-bg.jpg)]">
-      <p className="font-mono">This is home page</p>;
+    <main className="h-screen bg-cover bg-[url(/backgrounds/mobile-home-bg.jpg)] p-4">
+      <section className="mt-28">
+        <h1 className="font-mono text-white text-3xl">iga sokół,</h1>
+        <h2 className="font-mono text-white text-3xl">UI/UX designer</h2>
+      </section>
     </main>
   );
 };
