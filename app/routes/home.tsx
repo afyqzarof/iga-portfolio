@@ -1,4 +1,3 @@
-import { Menu } from "~/components/menu";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
@@ -10,9 +9,9 @@ export function meta({}: Route.MetaArgs) {
 
 const Home = () => {
   return (
-    <div className="p-4">
+    <div className="p-4 md:hidden">
       <section className="mt-24">
-        <h1 className="font-mono text-3xl text-white">iga sokół,</h1>
+        <h1 className="font-mono text-3xl text-white">iga sokół</h1>
         <h2 className="font-mono text-3xl text-white">UI/UX designer</h2>
       </section>
     </div>
