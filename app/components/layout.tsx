@@ -3,7 +3,6 @@ import { Menu } from "./menu";
 
 const Layout = () => {
   const location = useLocation();
-  console.log(location);
 
   const getPath = () => {
     switch (location.pathname) {

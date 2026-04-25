@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink, useLocation } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import { Dot } from "./dot";
 import Footer from "./footer";
 
@@ -24,11 +24,19 @@ const MenuBtn = ({
 const Menu = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  let navigate = useNavigate();
+
   const handleClick = () => setOpen(!open);
 
   const isActive = (path: string): boolean => {
     return location.pathname === path;
   };
+
+  const handleLinkClick = (path: string) => {
+    navigate(path);
+    setOpen(false);
+  };
+
   return (
     <>
       {!open && (
@@ -44,18 +52,26 @@ const Menu = () => {
           <section className="flex flex-col items-start gap-5">
             <ul className="flex flex-col gap-5">
               <li>
-                <NavLink to="/" className={isActive("/") ? "line-through" : ""}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    handleLinkClick("/");
+                  }}
+                  className={isActive("/") ? "line-through" : ""}
+                >
                   home
-                </NavLink>
+                </button>
               </li>
               <li>view my project, studio</li>
               <li>
-                <Link
-                  to="about"
+                <button
+                  onClick={() => {
+                    handleLinkClick("/about");
+                  }}
                   className={isActive("/about") ? "line-through" : ""}
                 >
                   about
-                </Link>
+                </button>
               </li>
               <li>contact</li>
             </ul>
