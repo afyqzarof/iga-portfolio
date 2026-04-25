@@ -10,15 +10,12 @@ export function meta({}: Route.MetaArgs) {
 
 const Home = () => {
   return (
-    <main className="fixed top-0 h-screen w-screen bg-[url(/backgrounds/mobile/home.jpg)] bg-cover md:bg-[url(/backgrounds/desktop/home.jpg)]">
-      <div className="p-4">
-        <section className="mt-24">
-          <h1 className="font-mono text-3xl text-white">iga sokół,</h1>
-          <h2 className="font-mono text-3xl text-white">UI/UX designer</h2>
-        </section>
-      </div>
-      <Menu />
-    </main>
+    <div className="p-4">
+      <section className="mt-24">
+        <h1 className="font-mono text-3xl text-white">iga sokół,</h1>
+        <h2 className="font-mono text-3xl text-white">UI/UX designer</h2>
+      </section>
+    </div>
   );
 };
 
