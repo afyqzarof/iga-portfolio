@@ -2,13 +2,19 @@ import { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import { Dot } from "./dot";
 
-const MenuBtn = ({ handleClick }: { handleClick: () => void }) => {
+const MenuBtn = ({
+  handleClick,
+  isActive,
+}: {
+  handleClick: () => void;
+  isActive: boolean;
+}) => {
   return (
     <button
       onClick={handleClick}
       className="flex cursor-pointer flex-col items-center gap-1 text-inherit"
     >
-      <Dot />
+      <Dot className={isActive ? "bg-accent" : "bg-white"} />
       (menu)
     </button>
   );
@@ -26,7 +32,7 @@ const Menu = () => {
     <>
       {!open && (
         <article className="fixed bottom-4 z-10 px-4 font-mono text-xl text-white">
-          <MenuBtn handleClick={handleClick} />
+          <MenuBtn handleClick={handleClick} isActive={open} />
         </article>
       )}
       <nav
@@ -50,7 +56,9 @@ const Menu = () => {
             </li>
             <li>contact</li>
           </ul>
-          <MenuBtn handleClick={handleClick} />
+          <div className="text-accent">
+            <MenuBtn handleClick={handleClick} isActive={open} />
+          </div>
         </section>
       </nav>
     </>

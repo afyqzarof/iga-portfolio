@@ -10,4 +10,6 @@
 @theme {
   --font-mono: "Xanh Mono", ui-mono, system-ui, mono;
   --font-serif: "Corporate A Pro";
+
+  --color-accent: #1ce4d0;
 }

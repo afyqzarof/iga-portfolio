@@ -1,5 +1,5 @@
 const Dot = ({ className }: { className?: string }) => {
-  return <div className={`h-4 w-4 rounded-full bg-white ${className}`} />;
+  return <div className={`bg-interit h-4 w-4 rounded-full ${className}`} />;
 };
 
 export { Dot };
