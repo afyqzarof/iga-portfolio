@@ -25,12 +25,12 @@ const Menu = () => {
   return (
     <>
       {!open && (
-        <article className="fixed bottom-4 z-10 px-4 font-serif text-xl text-white">
+        <article className="fixed bottom-4 z-10 px-4 font-mono text-xl text-white">
           <MenuBtn handleClick={handleClick} />
         </article>
       )}
       <nav
-        className={` ${open ? "translate-0 opacity-80" : "translate-y-full opacity-0"} absolute top-0 flex h-screen w-screen items-end overflow-hidden bg-[#6B6B6BCC] p-4 font-serif text-xl text-white transition`}
+        className={` ${open ? "translate-0 opacity-80" : "translate-y-full opacity-0"} absolute top-0 flex h-screen w-screen items-end overflow-hidden bg-[#6B6B6BCC] p-4 font-mono text-xl text-white transition`}
       >
         <section className="flex flex-col items-start gap-5">
           <ul className="flex flex-col gap-5">
