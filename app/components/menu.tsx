@@ -32,7 +32,7 @@ const Menu = () => {
   return (
     <>
       {!open && (
-        <article className="fixed bottom-4 z-10 px-4 font-mono text-xl text-white">
+        <article className="fixed bottom-4 z-10 px-4 font-mono text-xl text-white md:hidden">
           <MenuBtn handleClick={handleClick} isActive={open} />
         </article>
       )}
