@@ -1,4 +1,5 @@
 import type { Route } from "./+types/about";
+import { motion } from "motion/react";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,13 +11,19 @@ export function meta({}: Route.MetaArgs) {
 const About = () => {
   return (
     <section className="flex justify-end gap-8">
-      <div className="hidden max-w-xl flex-3 md:block">
+      <motion.div
+        drag
+        dragMomentum={false}
+        dragElastic={0}
+        className="hidden max-w-xl flex-3 md:block"
+      >
         <img
+          draggable={false}
           src="/iga-picture.jpg"
           alt="iga's picture"
           className="w-full max-w-xl"
         />
-      </div>
+      </motion.div>
       <div className="flex flex-1/6 flex-col gap-4 py-24 pr-20 pl-4 font-serif text-white md:gap-8 md:pt-30 md:pl-0 md:text-2xl">
         <p>
           Iga holds a degree in graphic communication design. Her route into
