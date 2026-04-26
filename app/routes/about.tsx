@@ -15,13 +15,13 @@ const About = () => {
         drag
         dragMomentum={false}
         dragElastic={0}
-        className="hidden max-w-xl flex-3 md:block"
+        className="absolute top-1/6 w-xs flex-3 md:static md:block md:max-w-xl"
       >
         <img
           draggable={false}
           src="/iga-picture.jpg"
           alt="iga's picture"
-          className="w-full max-w-xl"
+          className="w-full translate-x-40 -rotate-45 md:translate-x-0 md:rotate-0"
         />
       </motion.div>
       <div className="flex flex-1/6 flex-col gap-4 py-24 pr-20 pl-4 font-serif text-white md:gap-8 md:pt-30 md:pl-0 md:text-2xl">
