@@ -28,9 +28,9 @@ const Layout = () => {
 
       {/* desktop layout */}
       <main
-        className={`fixed top-0 hidden h-screen w-screen bg-cover px-8 py-4 md:flex md:bg-[url(/backgrounds/desktop/home.jpg)]`}
+        className={`fixed top-0 hidden h-screen w-screen gap-48 bg-cover px-8 py-4 md:flex md:bg-[url(/backgrounds/desktop/home.jpg)]`}
       >
-        <section className="flex flex-col justify-between font-mono">
+        <section className="flex min-w-xs flex-col justify-between font-mono">
           <div className="flex-1/3">
             <p className="mt-34 flex items-center gap-4 text-3xl text-white">
               <Dot className="bg-white" />
