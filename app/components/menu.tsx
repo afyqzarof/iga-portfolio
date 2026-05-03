@@ -47,7 +47,7 @@ const Menu = () => {
       <nav
         className={` ${open ? "translate-0 opacity-80 backdrop-blur-2xl" : "translate-y-full opacity-0"} absolute top-0 flex h-screen w-screen items-end overflow-hidden bg-[#6B6B6BCC] p-4 font-mono text-xl text-white transition`}
       >
-        <div className="flex h-full flex-col justify-between">
+        <div className="flex h-full flex-col justify-between pt-8 pr-22">
           <Footer />
           <section className="flex flex-col items-start gap-5">
             <ul className="flex flex-col gap-5">

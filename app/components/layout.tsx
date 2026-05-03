@@ -9,6 +9,8 @@ const Layout = () => {
     switch (location.pathname) {
       case "/about":
         return "about";
+      case "/contact":
+        return "contact";
       default:
         return "home";
     }
