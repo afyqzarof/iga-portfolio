@@ -62,7 +62,16 @@ const Menu = () => {
                   home
                 </button>
               </li>
-              <li>view my project, studio</li>
+              <li>
+                <button
+                  onClick={() => {
+                    handleLinkClick("/work");
+                  }}
+                  className={isActive("/work") ? "line-through" : ""}
+                >
+                  view my project, studio
+                </button>
+              </li>
               <li>
                 <button
                   onClick={() => {
@@ -73,7 +82,16 @@ const Menu = () => {
                   about
                 </button>
               </li>
-              <li>contact</li>
+              <li>
+                <button
+                  onClick={() => {
+                    handleLinkClick("/contact");
+                  }}
+                  className={isActive("/contact") ? "line-through" : ""}
+                >
+                  contact
+                </button>
+              </li>
             </ul>
             <div className="text-accent">
               <MenuBtn handleClick={handleClick} isActive={open} />
