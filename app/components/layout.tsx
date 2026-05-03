@@ -1,6 +1,7 @@
 import { NavLink, Outlet, useLocation } from "react-router";
 import { Menu } from "./menu";
 import { Dot } from "./dot";
+import Footer from "./footer";
 
 const Layout = () => {
   const location = useLocation();
@@ -62,6 +63,9 @@ const Layout = () => {
           </ul>
         </section>
         <Outlet />
+        <section className="absolute right-10 bottom-10">
+          <Footer />
+        </section>
       </main>
     </>
   );
