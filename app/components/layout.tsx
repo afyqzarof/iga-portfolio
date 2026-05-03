@@ -20,7 +20,8 @@ const Layout = () => {
     <>
       {/* mobile layout */}
       <main
-        className={`fixed top-0 h-screen w-screen bg-[url(/backgrounds/mobile/${getPath()}.jpg)] bg-cover md:hidden`}
+        className="fixed top-0 h-screen w-screen bg-cover md:hidden"
+        style={{ backgroundImage: `url(/backgrounds/mobile/${getPath()}.jpg)` }}
       >
         <Outlet />
         <Menu />
@@ -46,7 +47,7 @@ const Layout = () => {
               .filter((path) => path !== getPath())
               .map((path) => {
                 return (
-                  <li className="text-3xl text-white">
+                  <li className="text-3xl text-white" key={path}>
                     <NavLink
                       to={path === "home" ? "/" : path}
                       className="flex items-center gap-2"
